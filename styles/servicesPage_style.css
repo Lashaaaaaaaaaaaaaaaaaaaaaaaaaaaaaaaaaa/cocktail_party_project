@@ -55,27 +55,28 @@ body {
 .nav_container {
   display: flex;
   align-items: center;
-  gap: 92px;
+  gap: 55px;
 }
 
 .nav_ul {
   display: flex;
-  gap: 35px;
+  gap: 30px;
 }
 
-li a {
+.nav_a {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  font-weight: 350;
+  font-weight: 300;
 }
 
-li a:hover {
-  color: rgb(255, 255, 138);
+.nav_a:hover {
+  color: rgb(251, 251, 116);
 }
 
 .login_icon_container {
   display: flex;
+  align-items: center;
   gap: 52px;
 }
 
@@ -129,14 +130,14 @@ li a:hover {
   font-weight: 700;
   letter-spacing: 0.02em;
   color: white;
-  margin-top: 90px;
+  margin-top: 6%;
 }
 
 .our_services {
   max-width: 1350px;
   margin: auto;
   background-color: #000000b3;
-  margin-top: 120px;
+  margin-top: 10%;
 }
 
 .cards {
@@ -154,15 +155,12 @@ li a:hover {
 
 .card {
   display: flex;
-
   flex-direction: column;
   gap: 35px;
 }
 
 .services_images {
   width: 303px;
-  height: 199px;
-  object-fit: cover;
 }
 
 .minus_margin_img {
@@ -282,11 +280,31 @@ footer {
   display: none;
 }
 
-@media (max-width: 320px) {
-  .header_container {
-    max-width: 320px;
-    margin: auto;
-    justify-content: space-between;
+.menu_btn {
+  display: none;
+}
+
+@media (max-width: 995px) {
+  .all_3_cards_together {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card_3 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu_btn {
+    display: block;
+    background-color: rgb(251, 251, 116);
+    border: none;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
   }
 
   .nav_ul {
@@ -326,7 +344,6 @@ footer {
   }
 
   .first_three_cards {
-    flex-direction: column;
     margin-top: 40px;
     gap: 40px;
   }
@@ -336,22 +353,12 @@ footer {
   }
 
   .second_three_cards {
-    flex-direction: column;
     gap: 40px;
   }
 
   .services_images {
     height: 167px;
     width: 254px;
-  }
-
-  .cards {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .card {
-    gap: 35px;
   }
 
   .our_services_titles {
@@ -371,6 +378,7 @@ footer {
 
   .event_buttons {
     flex-direction: column;
+    align-items: center;
     margin-bottom: 40px;
   }
 
