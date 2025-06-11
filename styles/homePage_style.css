@@ -55,7 +55,7 @@ body {
 .nav_container {
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 50px;
 }
 
 .nav_ul {
@@ -76,6 +76,7 @@ body {
 
 .login_icon_container {
   display: flex;
+  align-items: center;
   gap: 52px;
 }
 
@@ -154,6 +155,7 @@ body {
   width: 185px;
   height: 55px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .first_btn:hover {
@@ -197,13 +199,27 @@ footer {
 @media (max-width: 768px) {
   .menu_btn {
     display: block;
-    background-color: rgb(251, 251, 116);
-    border: none;
-    border-radius: 6px;
+    color: rgb(251, 251, 116);
+    background-color: transparent;
+    border: 2px solid rgb(251, 251, 116);
+    border-radius: 8px;
     width: 70px;
     height: 30px;
     cursor: pointer;
     margin-right: 20px;
+    box-shadow: 1px 1px 9px rgb(251, 251, 116);
+    filter: drop-shadow(0 0 20px #2bc3ff) drop-shadow(0 0 60px #2bc3ff);
+    animation: animateText 4s ease-in-out infinite;
+  }
+
+  @keyframes animateText {
+    0%,
+    100% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 100%;
+    }
   }
 
   .nav_ul {
@@ -214,18 +230,8 @@ footer {
     display: none;
   }
 
-  .q-productions {
-    width: 106px;
-    height: 108px;
-  }
-
   .Q_p {
     font-size: 60px;
-  }
-
-  .productions_p {
-    line-height: 16px;
-    font-size: 12px;
   }
 
   .title_container {

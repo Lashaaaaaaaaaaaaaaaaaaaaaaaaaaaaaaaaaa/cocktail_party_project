@@ -9,8 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Oooh+Baby&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="/styles/homePage_style.css" />
+    <link rel="stylesheet" href="/styles/contact_style.css" />
+    <title>Contact Page</title>
   </head>
   <body>
     <header>
@@ -82,15 +82,76 @@
       </div>
       <!-- header_container end -->
     </header>
-    <div class="title_container">
-      <p class="title_one">We Are Q Productions</p>
-      <p class="title_two">
-        HERE TO CREATE <br />
-        MOMENTS THAT LAST <br />
-        A LIFETIME
+
+    <h1 class="contact_us_title">CONTACT US</h1>
+
+    <!-- your_next_event_container start -->
+    <div class="your_next_event_container">
+      <p class="your_next_event_title">
+        Let's Plan Your <br />
+        Next Event
       </p>
-      <button class="first_btn"><p class="btn_p">Upcoming Events</p></button>
+      <div class="information_container">
+        <div class="information_div">
+          <p class="information_p">Phone</p>
+          <p class="contact_p">123-456-78910</p>
+        </div>
+        <div class="information_div">
+          <p class="information_p">Address</p>
+          <p class="contact_p">500 Terry Francine St. SF, CA 9415</p>
+        </div>
+        <div class="information_div">
+          <p class="information_p">Mail</p>
+          <p class="contact_p mail_p">info@mysite.com</p>
+        </div>
+      </div>
+
+      <!-- form start -->
+      <form>
+        <!-- form_container start -->
+        <div class="form_container">
+          <div class="form_united_div">
+            <div class="form_div">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="form_div">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+          </div>
+          <div class="form_united_div">
+            <div class="form_div">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form_div">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+          </div>
+          <div class="leave-us-message_div">
+            <label for="leave-us-message">Leave us a message...</label>
+            <input type="text" id="leave-us-message" name="leave-us-message" />
+          </div>
+          <button class="form_btn">Submit</button>
+        </div>
+        <!-- form_container end -->
+      </form>
+      <!-- form end -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019163924674!2d-122.42067968468108!3d37.774929279759984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c3e6df29f%3A0x9a4efbcf59e32563!2sSan+Francisco!5e0!3m2!1sen!2sus!4v1611760046230!5m2!1sen!2sus"
+        width="100%"
+        height="650"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
     </div>
+    <!-- your_next_event_container end -->
+
     <!-- footer start -->
     <footer>
       <p class="footer_p">
