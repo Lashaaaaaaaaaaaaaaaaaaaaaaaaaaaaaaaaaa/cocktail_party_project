@@ -246,7 +246,7 @@ body {
 
 .event_img:hover {
   cursor: pointer;
-  box-shadow: 4px 4px 20px aqua;
+  box-shadow: 4px 4px 20px rgb(251, 251, 116);
 }
 
 .what_they_are_saying_container {
@@ -425,7 +425,12 @@ footer {
   }
 
   .about_q_productions_p {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 0 6px;
+  }
+
+  .about_q_productions_p br {
+    display: none;
   }
 
   .our_team_title {
@@ -433,8 +438,8 @@ footer {
   }
 
   .our_team_img {
-    width: 220px;
-    height: 299px;
+    width: 206px;
+    height: 290px;
   }
 
   .events_gallery_title {
@@ -443,7 +448,7 @@ footer {
 
   .events_gallery_container {
     justify-content: center;
-    gap: 3px;
+    gap: 9px;
   }
 
   .event_img {
@@ -465,7 +470,7 @@ footer {
   }
 
   .united_p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .footer_br {

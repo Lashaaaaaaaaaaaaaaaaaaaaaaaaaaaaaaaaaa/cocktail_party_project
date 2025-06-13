@@ -123,7 +123,7 @@ body {
   height: 23px;
 }
 
-.business_conference_container {
+.music_concert_container {
   max-width: 84.4em;
   margin: auto;
   background-color: #000000ad;
@@ -132,7 +132,7 @@ body {
   align-items: center;
 }
 
-.business_conference_title {
+.music_concert_title {
   color: rgb(251, 251, 116);
   margin: 1em 0 0.4em;
   letter-spacing: 0.02em;
@@ -140,18 +140,18 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
-.business_conference_title br {
+.music_concert_title br {
   display: none;
 }
 
-.business_conference_div {
+.music_concert_div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.conference_p {
+.music_concert_p {
   color: white;
   font-size: 18px;
   font-family: "Segoe UI", sans-serif;
@@ -168,7 +168,7 @@ body {
   text-align: center;
 }
 
-.business_conference_btn {
+.music_concert_btn {
   width: 160px;
   height: 48px;
   color: black;
@@ -180,11 +180,11 @@ body {
   margin: 3.3em 0;
 }
 
-.business_conference_btn:hover {
+.music_concert_btn:hover {
   text-decoration: underline;
 }
 
-.business_conference_img {
+.music_concert_img {
   width: 57.4em;
   height: 34.5em;
 }
@@ -318,7 +318,7 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 922px) {
-  .business_conference_img {
+  .music_concert_img {
     width: 100%;
   }
 
@@ -360,11 +360,11 @@ footer {
 }
 
 @media (min-width: 280px) and (max-width: 768px) {
-  .business_conference_img {
+  .music_concert_img {
     height: 24em;
   }
 
-  .business_conference_title {
+  .music_concert_title {
     font-size: 32px;
     margin: 1em 0 0.1em;
   }
@@ -373,7 +373,7 @@ footer {
     font-size: 26px;
   }
 
-  .conference_p {
+  .music_concert_p {
     text-align: center;
   }
 
@@ -381,7 +381,7 @@ footer {
     left: -3em !important;
   }
 
-  .business_conference_btn {
+  .music_concert_btn {
     margin: 2em 0 0;
     width: 80%;
   }
@@ -467,21 +467,21 @@ footer {
     flex-direction: column-reverse;
   }
 
-  .business_conference_img {
+  .music_concert_img {
     max-width: 100%;
   }
 
-  .business_conference_title {
+  .music_concert_title {
     text-align: center;
     font-size: 44px;
     margin: 1em 0 0.1em;
   }
 
-  .business_conference_title br {
+  .music_concert_title br {
     display: block;
   }
 
-  .conference_p {
+  .music_concert_p {
     font-size: 18px;
     letter-spacing: 0.05em;
   }
