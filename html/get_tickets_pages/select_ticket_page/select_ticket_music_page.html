@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/styles/get_tickets_styles/select_ticket_styles/select_ticket_style.css"
+    />
+    <title>Select Ticket Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- header_container start -->
+      <div class="header_container">
+        <div class="q-productions">
+          <div class="q-productions_links">
+            <a href="/html/homePage.html">
+              <p class="Q_p">Q</p>
+              <p class="productions_p">Productions</p>
+            </a>
+          </div>
+        </div>
+        <!-- nav_container start -->
+        <div class="nav_container">
+          <!-- for desktop nav -->
+          <nav>
+            <ul class="nav_ul">
+              <li>
+                <a class="nav_a" href="/html/servicesPage.html">Services</a>
+              </li>
+              <li><a class="nav_a" href="/html/aboutPage.html">About</a></li>
+              <li>
+                <a class="nav_a" href="/html/contactPage.html">Contact</a>
+              </li>
+              <li>
+                <a class="nav_a" href="/html/getTickets.html">Get Tickets</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- for mobile nav -->
+          <a href="/html/burger_menu.html">
+            <button class="menu_btn">Menu</button>
+          </a>
+
+          <!-- login_icon_container start -->
+          <div class="login_icon_container">
+            <div class="login">
+              <div class="avatar">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/user--v1.png"
+                  alt="user icon"
+                />
+              </div>
+              <p class="login_p">Log In</p>
+            </div>
+            <div class="header_icons">
+              <a target="_blank" href="https://www.facebook.com/9K9K9K9"
+                ><img
+                  class="icon"
+                  src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png"
+                  alt="facebook"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/prettyyflackkooo/"
+              >
+                <img
+                  class="icon"
+                  src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- login_icon_container end -->
+        </div>
+        <!-- nav_container end -->
+      </div>
+      <!-- header_container end -->
+    </header>
+
+    <div class="schedule_container">
+      <div class="back_arrow_and_schedule_container">
+        <a
+          class="back_arrow_a"
+          href="/html/get_tickets_pages/music_concert.html"
+        >
+          <img
+            class="back_arrow_img"
+            src="/images/get_tickets_images/select_ticket_images/arrow_back.png"
+            alt="arrow_back"
+          />
+          <button class="back_btn">Back</button>
+        </a>
+
+        <p class="service_title">Schedule your service</p>
+      </div>
+
+      <div class="timezone_container">
+        <div class="timezone_div">
+          <p class="same_p">Select a Date and Time</p>
+          <div class="timezone_select_div">
+            <label class="timezone_p" for="time_zone">Time zone:</label>
+            <select id="time_zone">
+              <option selected value="pdt">Pacific Daylight Time (PDT)</option>
+              <option value="gmt+4">Georgia Standart Time (GMT +4)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="details_div">
+          <p class="same_p">Service Details</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="calendar-section">
+          <div>
+            <div class="calendar-header">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24"
+                height="24"
+                class="sQ7MzbO"
+              >
+                <path
+                  d="M9.12210136,12 L16.0596461,18.9393399 C16.352647,19.2321253 16.3528218,19.706999 16.0600364,20 C15.7672509,20.293001 15.2923772,20.2931757 14.9993763,20.0003903 L7,12 L14.9993763,3.99960971 C15.2923772,3.70682428 15.7672509,3.70699902 16.0600364,4 C16.3528218,4.29300098 16.352647,4.76787468 16.0596461,5.0606601 L9.12210136,12 Z"
+                ></path>
+              </svg>
+              <span>July 2025</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24"
+                height="24"
+                class="sQ7MzbO"
+              >
+                <path
+                  d="M8.22083109,4 C8.51380539,3.70718788 8.9886791,3.70731936 9.28149122,4.00029365 L17.2763084,12 L9.28047689,19.9997063 C8.98766478,20.2926806 8.51279106,20.2928121 8.21981676,20 C7.92684246,19.7071879 7.92671099,19.2323142 8.21952311,18.9393399 L15.1555752,12 L8.22053744,5.06066013 C7.92772532,4.76768583 7.92785679,4.29281212 8.22083109,4 Z"
+                ></path>
+              </svg>
+            </div>
+
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="inactive">1</td>
+                  <td class="inactive">2</td>
+                  <td class="inactive">3</td>
+                  <td class="inactive">4</td>
+                  <td class="inactive">5</td>
+                  <td class="inactive">6</td>
+                  <td class="inactive">7</td>
+                </tr>
+                <tr>
+                  <td class="inactive">8</td>
+                  <td class="inactive">9</td>
+                  <td class="inactive">10</td>
+                  <td class="inactive">11</td>
+                  <td class="inactive">12</td>
+                  <td class="inactive">13</td>
+                  <td class="inactive">14</td>
+                </tr>
+                <tr class="hover">
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td class="selected">21</td>
+                </tr>
+                <tr class="hover">
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+                <tr class="hover">
+                  <td>29</td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="availability">
+            <p>Availability for Wednesday, August 21</p>
+            <div class="time-slots">
+              <button>08:00 am</button>
+              <button>08:30 am</button>
+              <button>9:00 am</button>
+              <button>9:30 am</button>
+              <button>10:00 am</button>
+              <button>10:30 am</button>
+              <button>11:00 pm</button>
+              <button>11:30 pm</button>
+              <button>12:00 pm</button>
+              <button>12:30 pm</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="united_paragraphs">
+            <p>FREE CONSULTATION</p>
+            <p>August 19, 2025 at 10:00 am</p>
+            <p class="time_and_address_p">Los Angeles</p>
+            <p class="time_and_address_p">30 min</p>
+          </div>
+
+          <div class="staff-select-div">
+            <p class="preferences_p">Preferences</p>
+            <label class="staff_p" for="staff">Staff Member *</label>
+            <select id="staff">
+              <option value="empty"></option>
+              <option value="trevor">TREVOR SINCLAIR</option>
+              <option value="grace">GRACE RIOS</option>
+              <option value="kim">KIM BAILEY</option>
+            </select>
+          </div>
+
+          <button class="next-button">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="your_next_event_container">
+      <p class="your_next_event_title">Contact Us</p>
+      <div class="information_container">
+        <div class="information_div">
+          <p class="information_p">Phone</p>
+          <p class="contact_p">123-456-78910</p>
+        </div>
+        <div class="information_div">
+          <p class="information_p">Address</p>
+          <p class="contact_p">500 Terry Francine St. SF, CA 9415</p>
+        </div>
+        <div class="information_div">
+          <p class="information_p">Mail</p>
+          <p class="contact_p mail_p">info@mysite.com</p>
+        </div>
+      </div>
+
+      <!-- form start -->
+      <form>
+        <!-- form_container start -->
+        <div class="form_container">
+          <div class="form_united_div">
+            <div class="form_div">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="form_div">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+          </div>
+
+          <div class="form_united_div">
+            <div class="form_div">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form_div">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+          </div>
+
+          <div class="leave-us-message_div">
+            <label for="leave-us-message">Leave us a message...</label>
+            <input type="text" id="leave-us-message" name="leave-us-message" />
+          </div>
+
+          <button class="form_btn">Submit</button>
+        </div>
+        <!-- form_container end -->
+      </form>
+      <!-- form end -->
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019163924674!2d-122.42067968468108!3d37.774929279759984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c3e6df29f%3A0x9a4efbcf59e32563!2sSan+Francisco!5e0!3m2!1sen!2sus!4v1611760046230!5m2!1sen!2sus"
+        width="80%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <!-- footer start -->
+    <footer>
+      <p class="footer_p">
+        &copy; 2035 by Q Productions. <br class="footer_br" />
+        Powered and secured by
+        <a
+          href="https://www.wix.com/website-template/view/html/2849?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F11&tpClick=view_button&esi=d02de05d-01af-4ee8-a4fb-9a68de757f33"
+          >Wix</a
+        >
+      </p>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>

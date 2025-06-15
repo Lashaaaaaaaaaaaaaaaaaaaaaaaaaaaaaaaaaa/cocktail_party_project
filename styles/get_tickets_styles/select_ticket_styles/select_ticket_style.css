@@ -12,11 +12,7 @@
 }
 
 body {
-  background-image: url(../images/background_img.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: brightness(0.5);
+  background: linear-gradient(to bottom right, rgb(186, 186, 87), #a0016f);
 }
 
 .header_container {
@@ -128,21 +124,265 @@ body {
   height: 23px;
 }
 
-.contact_us_title {
+.schedule_container {
+  max-width: 865px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.back_arrow_and_schedule_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.back_arrow_a {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.back_arrow_img {
+  height: 21px;
+}
+
+.back_btn {
+  font-size: 16px;
+  font-family: my_font;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.service_title {
+  font-size: 34px;
+  font-weight: 300;
+  font-family: system-ui;
+  line-height: 1.5em;
+}
+
+.timezone_container {
+  display: flex;
+  gap: 3em;
+}
+
+.timezone_div {
+  display: flex;
+  gap: 10em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aca2a2;
+}
+
+.timezone_select_div {
+  display: flex;
+  align-items: center;
+}
+
+.timezone_select_div select {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.timezone_p {
+  font-size: 14px;
+  color: black;
+  font-family: my_font;
+  cursor: pointer;
+}
+
+.details_div {
+  margin-bottom: 3em;
+  width: 12em;
+  border-bottom: 1px solid #aca2a2;
+}
+
+.same_p {
+  font-size: 17px;
+  font-family: system-ui;
+}
+
+.position_p {
+  position: relative;
+  bottom: 10px;
+}
+
+.timezone {
+  font-size: 0.9rem;
+  font-family: system-ui;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3em;
+  padding: 20px;
+  gap: 40px;
+}
+
+.calendar-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-family: my_font;
+  margin-bottom: 10px;
+}
+
+.calendar-header svg:hover {
+  color: #555;
+  cursor: pointer;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.calendar-table {
+  width: 100%;
   text-align: center;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 7px;
+  font-weight: 100;
+  font-family: my_font;
+}
+
+.calendar-table td.selected {
+  background-color: black;
   color: white;
-  font-size: 72px;
-  font-weight: 700;
-  font-family: "Segoe UI", sans-serif;
-  letter-spacing: 0.02em;
-  line-height: 1.3em;
-  margin: 5% 0;
+}
+
+.hover td:hover {
+  cursor: pointer;
+  background-color: rgb(204, 202, 202);
+}
+
+.hover td:focus {
+  color: rgb(0, 0, 0);
+}
+
+.calendar-table td.inactive {
+  color: #9c9c9c;
+}
+
+.calendar-table td::after {
+  content: "•";
+  display: block;
+}
+
+.calendar-table td.inactive::after {
+  content: "";
+}
+
+.availability p {
+  font-size: 16px;
+  font-family: my_font;
+  margin-bottom: 36px;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.time-slots button {
+  width: 8.5em;
+  padding: 10px;
+  border: 1px solid #000000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.time-slots button:focus {
+  background-color: #888787;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  bottom: 2.69em;
+}
+
+.preferences_p {
+  font-size: 15px;
+  font-family: my_font;
+}
+
+.united_paragraphs {
+  display: flex;
+  font-family: my_font;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #aca2a2;
+}
+
+.time_and_address_p {
+  color: #aca2a2;
+}
+
+.staff_p {
+  font-size: 17px;
+  font-family: my_font;
+  color: #aca2a2;
+}
+
+.staff-select-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin: 20px 0;
+}
+
+.staff-select-div select {
+  width: 14em;
+  padding: 11px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.next-button {
+  width: 100%;
+  padding: 11px;
+  font-size: 16px;
+  color: #000000;
+  background-color: rgb(251, 251, 116);
+  border: none;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  color: rgb(251, 251, 116);
+  border: 1px solid rgb(251, 251, 116);
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .your_next_event_container {
-  max-width: 1350px;
-  margin: auto;
-  background-color: #000000bd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +477,7 @@ input:focus {
 }
 
 #leave-us-message {
-  width: 50em;
+  width: 50.5em;
   height: 7.7em;
   padding-bottom: 5.6em;
 }
@@ -261,9 +501,13 @@ input:focus {
   background-color: transparent;
 }
 
+.menu_btn {
+  display: none;
+}
+
 footer {
-  margin-top: 1.5%;
-  padding-bottom: 1.5%;
+  margin-top: 2%;
+  padding-bottom: 25px;
 }
 
 .footer_p {
@@ -283,24 +527,47 @@ footer {
   display: none;
 }
 
-.menu_btn {
-  display: none;
-}
-
-@media (max-width: 390px) {
-  input {
-    width: 18em;
+@media (max-width: 921px) {
+  .back_arrow_a {
+    margin-right: 14.6em;
   }
 
-  .contact_us_title {
-    margin: 9% 0;
+  .service_title {
+    font-size: 32px;
   }
-}
 
-@media (max-width: 540px) {
-  .form_btn {
-    width: 50%;
-    height: 42px;
+  .back_arrow_and_schedule_container {
+    align-items: center;
+  }
+
+  .timezone_container {
+    justify-content: center;
+  }
+
+  .timezone_div {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container {
+    gap: 55px;
+    flex-direction: column;
+  }
+
+  .calendar-section {
+    flex-direction: column;
+  }
+
+  .availability p {
+    margin-bottom: 12px;
+  }
+
+  .details-container {
+    bottom: 0;
+  }
+
+  .details_div {
+    margin-bottom: 1em;
   }
 }
 
@@ -382,16 +649,21 @@ footer {
     height: 8em;
   }
 
-  iframe {
-    height: 30em;
-  }
-
-  footer {
-    margin-top: 4%;
-    padding-bottom: 4%;
-  }
-
   .footer_br {
     display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .service_title {
+    font-size: 28px;
+  }
+
+  input {
+    width: 20em;
+  }
+
+  iframe {
+    height: 15em;
   }
 }

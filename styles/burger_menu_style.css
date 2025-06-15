@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: my_font;
+  src: url(/fonts/Lato-Regular.ttf);
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -76,7 +81,7 @@ nav {
 
 .mobile-nav a {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: my_font;
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -87,7 +92,7 @@ nav {
 
 .login_p {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: my_font;
   font-size: 15px;
   font-weight: 300;
 }
